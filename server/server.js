@@ -20,48 +20,10 @@ app.post('/todos', (request, response) => {
   }, (e) => {
     response.status(400).send(e);
   });
-})
+});
 
 app.listen(3000, () => {
   console.log('Started on port 3000');
 });
-//Instantiate a new Todo
 
-// let newTodo = new Todo({
-//   text: 'Cook dinner'
-// });
-//
-// newTodo.save().then((doc) => {
-//   console.log('Saved todo', doc);
-// }, (e) => {
-//   console.log('Unable to save todo');
-// });
-
-
-
-//Instantiate a new Todo
-
-// let newTodo = new Todo({
-//   text: 'Make Eforiro',
-//   completed: true,
-//   completedAt: Date.now()
-// });
-//
-// newTodo.save().then((doc) => {
-//   console.log('Saved todo', doc);
-// }, (e) => {
-//   console.log('Unable to save todo');
-// });
-
-//
-//Instantiate a new User
-
-// let newUser = new User({
-//   email: 'buddhie2@gmail.com',
-// });
-//
-// newUser.save().then((doc) => {
-//   console.log('Saved new User', doc);
-// }, (e) => {
-//   console.log('Unable to save new User');
-// });
+module.exports = {app};

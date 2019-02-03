@@ -1,0 +1,7 @@
+Setup test packages:
+
+npm i expect mocha nodeman supertest --save-dev
+
+
+To run test issue the following commmand:
+npm run test-watch
